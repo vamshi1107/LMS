@@ -1,0 +1,33 @@
+#page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#con{
+    display: flex;
+    flex-direction: column;
+}
+.but{
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.but:hover{
+    box-shadow: 0px 0px 200px 1px gray;
+}
+
+#issue{
+    background-color:white;
+}
+
+#return{
+    background-color: white;
+}
