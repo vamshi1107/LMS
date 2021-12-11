@@ -1,0 +1,104 @@
+
+#memnam{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+#issuelab{
+    margin-top: 50px;
+    margin-left: 2vw;
+    font-size: 1.8rem;
+}
+.iscon{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.issue{
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+#form.expanded {
+    width: 50vw;
+    background-color: white;
+    height: 60%;
+    position: fixed;
+    z-index: 99999;
+    top: 20%;
+    left: 25vw;
+}
+
+.labcon{
+    margin-top: 10%
+    ;
+}
+
+#relab{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold; 
+}
+
+.retil{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.label{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 30vw;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.redat{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.formbut{
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20%;
+}
+
+#progress {
+   height:100px;
+   width:100px;
+   border:10px solid grey;
+   border-left:10px solid blue;
+   border-radius:50%;
+   position:fixed;
+   z-index:11111;
+   left:50%;
+   margin-left:-100px;
+   top:65%;
+   margin-top:-100px;
+   animation:rotate .5s infinite ease;
+   visibility: hidden;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#progress.enable{
+    visibility: visible;
+}

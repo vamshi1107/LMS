@@ -1,8 +1,10 @@
 #page{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     height: 90vh;
+    width: 100vw;
 }
 #con{
     display: flex;
@@ -14,14 +16,16 @@
     margin-left: auto;
     width: 20vw;
     height: 50px;
-    border-radius: 25px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius:10px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dee7f0;
 }
 
 .but:hover{
-    box-shadow: 0px 0px 200px 1px gray;
+       border: 3px solid black;
+
 }
 
 #issue{
@@ -30,4 +34,10 @@
 
 #return{
     background-color: white;
+}
+#books{
+    width: 18vw;
+}
+#members{
+    width: 18vw;
 }

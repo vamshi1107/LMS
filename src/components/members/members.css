@@ -1,0 +1,136 @@
+#mempage{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.leb{
+    font-size: 2.5rem;
+}
+.phead{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-content: center;
+}
+
+#sea{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.phead>button{
+    color: black;
+    margin-left: 10px;
+    width: 20vw;
+    height: 45px;
+    border-radius:10px;
+    border: 2px solid black;
+    background-color: #dee7f0;
+    font-size: 1.1rem;
+}
+
+#blank {
+    background-color: transparent;
+
+}
+
+#blank.expanded {
+    background-color: rgba(0, 0, 0, 0.459);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100vw;
+    z-index: 999;
+}
+
+#form{
+    width: 0px;
+    overflow: hidden;
+}
+#form.expanded {
+    width: 60vw;
+    background-color: white;
+    height: 70%;
+    position: absolute;
+    z-index: 99999;
+    top:10%;   
+    left: 20vw;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mfeild{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mfeild>input{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.forlab{
+    margin-top: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.memcon{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    border: .1px solid rgb(97, 90, 90);
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.member>div{
+    width: 20%;
+    text-align: center;
+    font-size: 1.1rem;
+    text-overflow: clip;
+}
+
+#dsp{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mpinner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.mpinner>label{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: flex-start;
+}
