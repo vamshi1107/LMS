@@ -93,7 +93,7 @@ const Members=()=>{
                           <div>All</div>
                     </label> */}
                 </div>
-                <button onClick={(e)=>Add(e)} >Add member</button>
+                <button onClick={(e)=>Add(e)} className="membut">Add member</button>
             </div>
             {members.length>0&& 
                 <div className="memcon">
@@ -133,7 +133,7 @@ const Members=()=>{
                 <input placeholder="Email"onChange={(e)=>{Update(e.target,"email")}} className="fin"></input>
             </div>
             <div className="mfeild">
-                <button onClick={(e)=>{Members(e)}}>Add member</button>
+                <button onClick={(e)=>{Members(e)}} className="membut">Add member</button>
             </div>
          </div>
         <div id="blank"></div>
