@@ -4,7 +4,7 @@
 
 <h2>Home page</h2>
 
-![image](https://user-images.githubusercontent.com/69498031/145675792-c0f6dbe8-7acd-4851-b9f8-56338f6dce24.png)
+![image](https://user-images.githubusercontent.com/69498031/145681462-c3ed5db5-c08e-4ddd-b389-aaf8467b5ea0.png)
 
 <h2>Importing books</h2>
 
