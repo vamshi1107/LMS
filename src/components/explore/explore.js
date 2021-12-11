@@ -91,7 +91,7 @@ const Explore=(props)=>{
             <div className="leb">Returns</div>
             <div className="phead">
                 <div className="pinner">
-                    <input placeholder="Search" onChange={(e)=>search(e.target.value)} id="sea"></input>
+                    <input placeholder="Search member ID" onChange={(e)=>search(e.target.value)} id="sea"></input>
                 </div>
             </div>
             <div>

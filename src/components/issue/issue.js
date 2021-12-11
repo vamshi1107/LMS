@@ -12,6 +12,7 @@ const Issue=()=>{
     const [books, setBooks] = useState([])
     const [member, setMember] = useState([])
     const [due, setDue] = useState("")
+    const [name, setName] = useState("")
     
     const  navigator = useNavigate();
 
@@ -27,6 +28,12 @@ const Issue=()=>{
                 document.getElementById("form").classList.remove("expanded")
                 clear()
         })
+    }
+
+    const close=()=>{
+        document.getElementById("blank").classList.remove("expanded")
+        document.getElementById("form").classList.remove("expanded")
+        clear()
     }
 
     const clear=()=>{
@@ -46,6 +53,7 @@ const Issue=()=>{
     }
 
     const search=(name)=>{
+            setName(name)
            if(name.replaceAll(" ","").length>0)
             {
                 var v=data.filter(ele=>ele.bid.toLowerCase().startsWith(name.toLowerCase()))
@@ -66,11 +74,20 @@ const Issue=()=>{
     }
 
     const issueBook=async(e)=>{
+        if(due<500){
         var v=transaction
         v["time"]=new Date().getTime()
         v["date"]=new Date().toISOString()
         var res=await issueBM(v)
-        alert("Successgully issued")
+        close()
+        load()
+        search(name)
+        var notification = alertify.notify('Successfully issued', 'success', 3, ()=>{});
+    }
+    else{
+        var notification = alertify.notify('Outstanding amount is above 500', 'error', 3, ()=>{});
+
+    }
     }
 
     const expand=(e,b)=>{
