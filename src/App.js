@@ -7,6 +7,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Members from './components/members/members';
 import Issue from './components/issue/issue'
 import Explore from './components/explore/explore';
+import Transaction from './components/transaction/transaction';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/issue" element={<Issue></Issue>} exact={true}></Route>
           <Route path="/members" element={<Members></Members>} exact={true}></Route>
           <Route path="/explore" element={<Explore></Explore>} exact={true}></Route>
+          <Route path="/reports" element={<Transaction></Transaction>} exact={true}></Route>
         </Routes>
       </BrowserRouter>
     </>

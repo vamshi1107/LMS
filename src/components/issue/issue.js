@@ -78,6 +78,7 @@ const Issue=()=>{
         var v=transaction
         v["time"]=new Date().getTime()
         v["date"]=new Date().toISOString()
+        v["paid"]="false"
         var res=await issueBM(v)
         close()
         load()
@@ -91,6 +92,9 @@ const Issue=()=>{
     }
 
     const expand=(e,b)=>{
+        var t=transaction
+        t["bid"]=b
+        setTransaction(t)
          document.getElementById("blank").classList.add("expanded")
         document.getElementById("form").classList.add("expanded")
     }
@@ -130,7 +134,7 @@ const Issue=()=>{
                         {
                             books.map(ele=>{
                                 return (
-                                    <div className="member" onClick={(e)=>{expand(e)}}>
+                                    <div className="member" onClick={(e)=>{expand(e,ele.bid)}}>
                                         <div>
                                            {ele.bid}
                                         </div>

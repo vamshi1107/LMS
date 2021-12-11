@@ -1,5 +1,6 @@
 import axios from "axios"
 
+// const server="http://127.0.0.1:5000/"
 const server="https://flask-lms-backend.herokuapp.com/"
 
 export const getBooks=async()=>{
@@ -85,6 +86,24 @@ export const returnBM=async(a)=>{
 
 export const sendOTP=async(to,otp)=>{
     const res= await axios.get(server+"sendotp"+"?otp="+otp+"&to="+to)
+    const data=res.data
+    return data
+}
+
+export const getAllIssues=async()=>{
+    const res= await axios.get(server+"issues",{})
+    const data=res.data
+    return data
+}
+
+export const getAllReturns=async()=>{
+    const res= await axios.get(server+"getallreturns",{})
+    const data=res.data
+    return data
+}
+
+export const getAmount=async()=>{
+    const res= await axios.get(server+"amount",{})
     const data=res.data
     return data
 }

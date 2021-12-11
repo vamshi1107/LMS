@@ -1,0 +1,50 @@
+#repage{
+    width: 95vw;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#replab{
+    font-size: 2.3rem;
+}
+.sla{
+    font-size: 1.8rem;
+}
+#subcon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.rele{
+    width: 50%;
+}
+.bcon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.belem{
+    width: 95%;
+    height: 40px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top{
+    width: 90%;
+    border: 1px solid black;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

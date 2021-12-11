@@ -76,8 +76,10 @@ const Explore=(props)=>{
          setbook(v)
     }
 
-    const returnBook=async(e)=>{
-        var res=await returnBM(issue)
+    const returnBook=async(e,amount)=>{
+        var q=issue
+        q["amount"]=amount
+        var res=await returnBM(q)
         if(parseInt(res.status)>0){
             close()
             search(member.mid)
@@ -131,7 +133,7 @@ const Explore=(props)=>{
                         <div className="redat">{book.days*5}</div>
                     </div>
                  </div>
-                 <button onClick={(e)=>returnBook(e)} className="formbut">Return</button>
+                 <button onClick={(e)=>returnBook(e,book.days*5)} className="formbut">Return</button>
              </div>
         </>
     )

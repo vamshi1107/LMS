@@ -18,6 +18,7 @@ const Home=(props)=>{
                 <button id="return"  className="but"  onClick={(e)=>navigator("/explore")}>Return</button>
                 <button id="books"   className="but"  onClick={(e)=>navigator("/books")}>Books</button>
                 <button id="members" className="but"  onClick={(e)=>navigator("/members")}>Members</button>
+                <button id="reports" className="but"  onClick={(e)=>navigator("/reports")}>Reports</button>
               </div>
           </div>
         </>
