@@ -3,7 +3,6 @@ import Header from "../header/Header"
 import {useEffect,useState} from 'react'
 import { getBookById, getMemberById,memberIssues, returnBM,getDue } from "../../services/service";
 import "./explore.css"
-import { DataSync } from "aws-sdk";
 
 const Explore=(props)=>{
     const params=useParams()
