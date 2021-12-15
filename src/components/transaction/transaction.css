@@ -48,7 +48,7 @@
     align-items: center;
 }
 
-#progress {
+#progr {
     height: 100px;
     width: 100px;
     border: 10px solid grey;
@@ -74,6 +74,6 @@
     }
 }
 
-#progress.enable {
+#progr.enable {
     visibility: visible;
 }

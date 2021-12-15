@@ -34,6 +34,7 @@ const Transaction=(e)=>{
     }
 
     const charts=async()=>{
+        document.getElementById("progr").classList.add("enable")
         var is=[["Name","No of books"]]
         var is2=[["Member","Amount","id"]]
         var res1=await getAllIssues()
@@ -59,6 +60,8 @@ const Transaction=(e)=>{
             c+=1
         }
         setChart2(is2)
+        document.getElementById("progr").classList.remove("enable")
+
     }
 
     return (
@@ -66,6 +69,7 @@ const Transaction=(e)=>{
             <Header></Header>
             <div id="repage">
                 <div id="replab">Report</div>
+                <div id="progr"></div>
                 <div id="subcon">
                     <div className="rele">
                         <div className="sla">Books</div>
