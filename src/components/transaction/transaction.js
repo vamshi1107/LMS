@@ -70,7 +70,7 @@ const Transaction=(e)=>{
                     <div className="rele">
                         <div className="sla">Books</div>
                             <div className="top">
-                                 <Chart
+                                  {chart1.length>0&&  <Chart
                                         width={500}
                                         height={'350px'}
                                         chartType="BarChart"
@@ -82,6 +82,7 @@ const Transaction=(e)=>{
                                         vAxis: { minValue: 0 },
                                         }}
                                     />
+                                    }
                             </div>
                         {issues.length>0&&
                             <div className="bcon">
@@ -100,7 +101,7 @@ const Transaction=(e)=>{
                     <div className="rele">
                         <div className="sla">Members</div>
                          <div className="top">
-                                  <Chart
+                                {chart2.length>0&&  <Chart
                                         width={500}
                                         height={'350px'}
                                         chartType="PieChart"
@@ -111,7 +112,7 @@ const Transaction=(e)=>{
                                         hAxis: { title: 'No of copies', titleTextStyle: { color: '#333' } },
                                         vAxis: { minValue: 0 },
                                         }}
-                                    />
+                                    />}
                          </div>
                         {amount.length>0&&
                             <div className="bcon">
